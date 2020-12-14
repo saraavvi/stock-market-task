@@ -9,6 +9,7 @@ import Navigation from "./components/Navigation";
 import CryptoDetailPage from "./pages/CryptoDetailPage";
 import CurrenciesDetailPage from "./pages/CurrenciesDetailPage";
 import IndexesDetailPage from "./pages/IndexesDetailPage";
+import MarketsDetailPage from "./pages/MarketsDetailPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/crypto/:id" component={CryptoDetailPage} />
         <Route path="/currencies/:id" component={CurrenciesDetailPage} />
         <Route path="/indexes/:id" component={IndexesDetailPage} />
+        <Route path="/markets/:id" component={MarketsDetailPage} />
 
         <Route path="/crypto/">
           <CryptoPage />

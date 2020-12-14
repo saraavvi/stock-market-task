@@ -16,9 +16,9 @@ export default function MarketsPage() {
       <h2>Markets Page</h2>
       {marketsData &&
         Object.entries(marketsData).map((item) => {
-          console.log(item);
           const key = item[0];
           const value = item[1];
+          console.log(value);
           return <MarketItem key={key} name={key} marketData={value} />;
         })}
     </div>
